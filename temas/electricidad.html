@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Electricidad · Resúmenes de instituto</title><link rel="stylesheet" href="../styles.css"></head>
+<body><nav class="nav"><div class="wrap"><a href="../index.html">← Todos los resúmenes</a></div></nav><main class="wrap"><article><h1>Resumen de electricidad y componentes pasivos</h1>
+<p>Basado en los tres documentos de la carpeta <strong>Electricidad</strong> de Google Drive:</p>
+<ul>
+<li><em>Electricidad. Conceptos generales</em>.</li>
+<li><em>Resistencia, potencia y energía eléctrica</em>.</li>
+<li><em>Electrónica general: componentes pasivos y complementarios</em>.</li>
+</ul>
+<h2>1. Electricidad: definición, efectos, producción y transporte</h2>
+<h3>Definición</h3>
+<p>La electricidad es una manifestación física relacionada con la estructura de la materia y, especialmente, con la presencia y el movimiento de los electrones. Un átomo neutro tiene igual número de protones, con carga positiva, y electrones, con carga negativa. Cuando existe un exceso o defecto de electrones aparece una <strong>carga eléctrica</strong>.</p>
+<ul>
+<li><strong>Carga negativa:</strong> exceso de electrones.</li>
+<li><strong>Carga positiva:</strong> defecto de electrones.</li>
+<li>Las cargas del mismo signo se repelen y las de signo contrario se atraen.</li>
+<li>La corriente eléctrica es el movimiento ordenado de cargas a través de un material conductor.</li>
+</ul>
+<h3>Efectos de la electricidad</h3>
+<ol>
+<li><strong>Efecto térmico:</strong> la corriente produce calor al atravesar materiales resistivos. Se utiliza en calefacciones, cocinas, hornos, planchas y calentadores.</li>
+<li><strong>Efecto luminoso:</strong> la corriente puede producir luz, por ejemplo, en lámparas y dispositivos luminiscentes.</li>
+<li><strong>Efecto químico:</strong> la corriente provoca reacciones químicas, como la electrólisis, la galvanización y la recarga de baterías.</li>
+<li><strong>Efecto magnético:</strong> una corriente que circula por una bobina crea un campo magnético. Es la base de electroimanes, motores, relés, altavoces y transformadores.</li>
+</ol>
+<h3>Producción de electricidad</h3>
+<p>Las centrales eléctricas transforman una energía primaria en energía eléctrica. Las formas principales estudiadas son:</p>
+<ul>
+<li><strong>Acción magnética:</strong> un conductor o bobina se mueve dentro de un campo magnético; es el principio del generador eléctrico o alternador.</li>
+<li><strong>Acción química:</strong> las reacciones químicas de pilas y baterías separan cargas.</li>
+<li><strong>Acción luminosa:</strong> las células fotovoltaicas convierten la luz en electricidad.</li>
+<li><strong>Acción térmica:</strong> un termopar genera una tensión cuando sus uniones están a distinta temperatura.</li>
+<li><strong>Acción por presión:</strong> el efecto piezoeléctrico produce tensión al deformar determinados materiales.</li>
+</ul>
+<h3>Transporte y distribución</h3>
+<p>La electricidad se produce donde existe una fuente primaria de energía y se consume en viviendas, empresas e industrias. Para transportarla a grandes distancias:</p>
+<ol>
+<li>Un generador produce la energía eléctrica.</li>
+<li>Un transformador elevador aumenta la tensión.</li>
+<li>Las líneas de alta tensión transportan la energía con menor intensidad y menos pérdidas por calentamiento.</li>
+<li>Transformadores reductores disminuyen la tensión progresivamente.</li>
+<li>Las redes de distribución entregan normalmente baja tensión, por ejemplo, 230/400 V.</li>
+</ol>
+<p>Para una potencia determinada, elevar la tensión permite reducir la intensidad, porque <code>P = V · I</code>. Como las pérdidas de la línea dependen de <code>Ppérdidas = I² · R</code>, disminuir la intensidad reduce considerablemente las pérdidas.</p>
+<h2>2. Magnitudes eléctricas</h2>
+<h3>Carga eléctrica (<code>Q</code>)</h3>
+<p>Representa la cantidad de electricidad. Su unidad es el <strong>culombio (C)</strong>. La relación con la corriente es:</p>
+<pre><code class="language-text">Q = I · t
+</code></pre>
+<p>donde <code>I</code> es la intensidad en amperios y <code>t</code> el tiempo en segundos.</p>
+<h3>Intensidad de corriente (<code>I</code>)</h3>
+<p>Es la cantidad de carga que atraviesa una sección del conductor por unidad de tiempo.</p>
+<pre><code class="language-text">I = Q / t
+</code></pre>
+<ul>
+<li>Unidad: <strong>amperio (A)</strong>.</li>
+<li><code>1 mA = 10⁻³ A</code>.</li>
+<li><code>1 µA = 10⁻⁶ A</code>.</li>
+<li>El amperímetro se conecta <strong>en serie</strong>.</li>
+</ul>
+<p>El sentido real corresponde al movimiento de electrones, del negativo al positivo. El sentido convencional se considera del positivo al negativo.</p>
+<h3>Tensión o diferencia de potencial (<code>V</code> o <code>U</code>)</h3>
+<p>Es la diferencia de energía eléctrica por carga entre dos puntos. Es la causa que impulsa a las cargas a circular por el circuito.</p>
+<pre><code class="language-text">V = W / Q
+</code></pre>
+<ul>
+<li>Unidad: <strong>voltio (V)</strong>.</li>
+<li><code>1 kV = 10³ V</code>.</li>
+<li><code>1 mV = 10⁻³ V</code>.</li>
+<li>El voltímetro se conecta <strong>en paralelo</strong>.</li>
+</ul>
+<p>La <strong>fuerza electromotriz (f.e.m.)</strong> es la energía por unidad de carga que proporciona el generador para separar y mover las cargas; también se mide en voltios.</p>
+<h3>Resistencia (<code>R</code>)</h3>
+<p>Es la oposición que presenta un material al paso de la corriente.</p>
+<ul>
+<li>Unidad: <strong>ohmio (Ω)</strong>.</li>
+<li><code>1 kΩ = 10³ Ω</code>.</li>
+<li><code>1 MΩ = 10⁶ Ω</code>.</li>
+</ul>
+<h3>Potencia (<code>P</code>)</h3>
+<p>Es la energía eléctrica transferida o transformada por unidad de tiempo. Su unidad es el <strong>vatio (W)</strong>.</p>
+<pre><code class="language-text">P = W / t
+P = V · I
+</code></pre>
+<h3>Energía (<code>E</code> o <code>W</code>)</h3>
+<p>Es el trabajo eléctrico realizado o consumido. Se expresa en julios (J), aunque en consumo eléctrico también se utiliza el kWh.</p>
+<pre><code class="language-text">E = P · t
+</code></pre>
+<h3>Corriente continua y alterna</h3>
+<ul>
+<li><strong>Corriente continua (CC):</strong> mantiene constante la polaridad y, en el caso ideal, el valor y el sentido de la corriente. La proporcionan pilas, baterías, dinamos y células fotovoltaicas.</li>
+<li><strong>Corriente alterna (CA):</strong> cambia periódicamente de sentido y de valor. La producen los alternadores y es la forma habitual de generar y transportar electricidad. La red industrial europea trabaja a 50 Hz.</li>
+</ul>
+<h2>3. Tipos de resistencias</h2>
+<h3>Resistencias fijas</h3>
+<p>Tienen un valor nominal que no se modifica durante el funcionamiento normal. Los tipos principales son:</p>
+<ul>
+<li><strong>Aglomeradas o de composición:</strong> mezcla de material resistivo y aglutinante; son económicas, pero menos precisas y más sensibles a la temperatura.</li>
+<li><strong>De película de carbón:</strong> muy utilizadas en pequeñas potencias.</li>
+<li><strong>De película metálica:</strong> ofrecen mayor precisión, estabilidad y menor ruido.</li>
+<li><strong>Bobinadas:</strong> utilizan un hilo o cinta de aleación resistiva. Soportan potencias elevadas, aunque pueden introducir un comportamiento inductivo.</li>
+</ul>
+<h3>Resistencias variables</h3>
+<ul>
+<li><strong>Potenciómetro:</strong> tiene tres terminales y permite obtener una fracción variable de la resistencia total mediante un cursor.</li>
+<li><strong>Reóstato:</strong> se utiliza como resistencia variable, normalmente con dos terminales.</li>
+<li>Pueden ser lineales o tener una variación logarítmica, según la posición del cursor.</li>
+</ul>
+<h3>Resistencias dependientes o no lineales</h3>
+<ul>
+<li><strong>NTC:</strong> su resistencia disminuye al aumentar la temperatura.</li>
+<li><strong>PTC:</strong> su resistencia aumenta al aumentar la temperatura.</li>
+<li><strong>LDR:</strong> su resistencia disminuye cuando aumenta la iluminación.</li>
+<li><strong>VDR o varistor:</strong> su resistencia disminuye cuando aumenta la tensión aplicada; se usa para limitar sobretensiones.</li>
+</ul>
+<h3>Parámetros de una resistencia</h3>
+<ul>
+<li><strong>Valor nominal:</strong> resistencia indicada por el fabricante.</li>
+<li><strong>Tolerancia:</strong> margen de variación permitido alrededor del valor nominal.</li>
+<li><strong>Potencia de disipación:</strong> potencia máxima que puede transformar en calor sin dañarse.</li>
+<li><strong>Coeficiente de temperatura:</strong> variación de la resistencia con la temperatura.</li>
+</ul>
+<h3>Código de colores</h3>
+<p>En una resistencia de cuatro bandas:</p>
+<ol>
+<li>Primera banda: primera cifra.</li>
+<li>Segunda banda: segunda cifra.</li>
+<li>Tercera banda: multiplicador.</li>
+<li>Cuarta banda: tolerancia.</li>
+</ol>
+<p>En una resistencia de cinco bandas se utilizan tres cifras significativas, multiplicador y tolerancia. El valor se calcula como:</p>
+<pre><code class="language-text">R = cifras significativas · multiplicador
+</code></pre>
+<p>Colores de las cifras: negro 0, marrón 1, rojo 2, naranja 3, amarillo 4, verde 5, azul 6, violeta 7, gris 8 y blanco 9. Los multiplicadores oro y plata representan <code>×0,1</code> y <code>×0,01</code>. Las tolerancias más habituales son oro <code>±5 %</code>, plata <code>±10 %</code> y sin banda <code>±20 %</code>.</p>
+<h3>Fórmulas de resistencias</h3>
+<p><strong>Ley de Ohm:</strong></p>
+<pre><code class="language-text">V = I · R
+I = V / R
+R = V / I
+</code></pre>
+<p><strong>Resistencia de un conductor:</strong></p>
+<pre><code class="language-text">R = ρ · L / S
+</code></pre>
+<p><code>ρ</code> es la resistividad del material, <code>L</code> la longitud y <code>S</code> la sección. La resistencia aumenta con la longitud y disminuye al aumentar la sección.</p>
+<p><strong>Variación con la temperatura:</strong></p>
+<pre><code class="language-text">RT = R20 · [1 + α · (T − 20 °C)]
+</code></pre>
+<p><strong>Potencia en una resistencia:</strong></p>
+<pre><code class="language-text">P = V · I = I² · R = V² / R
+</code></pre>
+<p><strong>Energía disipada:</strong></p>
+<pre><code class="language-text">E = P · t = V · I · t = I² · R · t = V² · t / R
+</code></pre>
+<p><strong>Resistencias en serie:</strong></p>
+<pre><code class="language-text">Req = R1 + R2 + ... + Rn
+</code></pre>
+<p>La corriente es la misma en todas y la tensión total es la suma de las caídas de tensión.</p>
+<p><strong>Resistencias en paralelo:</strong></p>
+<pre><code class="language-text">1 / Req = 1/R1 + 1/R2 + ... + 1/Rn
+</code></pre>
+<p>La tensión es la misma en todas y la corriente total es la suma de las corrientes de las ramas. Para dos resistencias:</p>
+<pre><code class="language-text">Req = (R1 · R2) / (R1 + R2)
+</code></pre>
+<p>En circuitos mixtos se simplifican sucesivamente los grupos en serie y en paralelo.</p>
+<h2>4. Condensadores: nomenclatura y tipos</h2>
+<h3>Definición y funcionamiento</h3>
+<p>Un condensador está formado por dos o más armaduras conductoras separadas por un dieléctrico aislante. Al aplicarle una tensión, acumula cargas iguales y de signo contrario en sus placas. Puede mantener la carga incluso después de desconectarlo del generador.</p>
+<h3>Magnitudes y nomenclatura</h3>
+<ul>
+<li><strong>Capacidad (<code>C</code>):</strong> cantidad de carga que puede almacenar por cada voltio.</li>
+<li><strong>Carga (<code>Q</code>):</strong> se expresa en culombios.</li>
+<li><strong>Tensión de trabajo (<code>Vt</code>):</strong> máxima tensión que puede soportar durante un funcionamiento prolongado.</li>
+<li><strong>Tolerancia:</strong> margen de variación de la capacidad real.</li>
+<li><strong>Rigidez dieléctrica:</strong> campo eléctrico máximo que soporta el dieléctrico antes de perforarse.</li>
+<li><strong>Coeficiente de temperatura:</strong> variación de la capacidad con la temperatura.</li>
+<li><strong>Polaridad:</strong> los electrolíticos de aluminio y tántalo deben conectarse respetando sus terminales positivo y negativo.</li>
+</ul>
+<p>Unidades:</p>
+<pre><code class="language-text">1 mF = 10⁻³ F
+1 µF = 10⁻⁶ F
+1 nF = 10⁻⁹ F
+1 pF = 10⁻¹² F
+</code></pre>
+<h3>Código de condensadores</h3>
+<p>En el código de tres cifras, las dos primeras cifras son significativas y la tercera indica el número de ceros, normalmente expresado en pF:</p>
+<pre><code class="language-text">104 = 10 · 10⁴ pF = 100 000 pF = 100 nF = 0,1 µF
+472 = 47 · 10² pF = 4 700 pF = 4,7 nF
+</code></pre>
+<p>También pueden aparecer marcas directas como <code>4n7</code> —4,7 nF— o <code>100p</code> —100 pF—. Además de la capacidad, hay que comprobar la tolerancia y la tensión de trabajo.</p>
+<h3>Tipos de condensadores</h3>
+<p><strong>Fijos no polarizados:</strong></p>
+<ul>
+<li>De papel.</li>
+<li>Cerámicos, muy usados en desacoplo y alta frecuencia.</li>
+<li>De plástico: poliéster, poliestireno, policarbonato, polipropileno y PTFE.</li>
+<li>De mica y vidrio, cuando se necesita estabilidad.</li>
+</ul>
+<p><strong>Fijos polarizados:</strong></p>
+<ul>
+<li>Electrolíticos de aluminio: gran capacidad, pero deben conectarse con la polaridad correcta.</li>
+<li>Electrolíticos de tántalo: gran capacidad en poco volumen, también polarizados.</li>
+</ul>
+<p><strong>Variables y ajustables:</strong></p>
+<ul>
+<li>Variables de aire, mica o cerámicos.</li>
+<li>Trimmers o ajustables, regulados durante la fabricación o el mantenimiento.</li>
+<li>Varactores o varicap, controlados por tensión.</li>
+<li>Condensadores con comportamiento dependiente de la temperatura.</li>
+</ul>
+<h3>Fórmulas de condensadores</h3>
+<p><strong>Capacidad:</strong></p>
+<pre><code class="language-text">C = Q / V
+Q = C · V
+V = Q / C
+</code></pre>
+<p><strong>Condensador plano:</strong></p>
+<pre><code class="language-text">C = ε · S / d
+</code></pre>
+<p><code>ε</code> es la permitividad del dieléctrico, <code>S</code> la superficie de las placas y <code>d</code> la separación entre ellas. La capacidad aumenta con la superficie y la permitividad, y disminuye al aumentar la separación.</p>
+<p><strong>Energía almacenada:</strong></p>
+<pre><code class="language-text">Ec = 1/2 · C · V² = 1/2 · Q · V = Q² / (2 · C)
+</code></pre>
+<p><strong>Condensadores en serie:</strong></p>
+<pre><code class="language-text">1 / Ceq = 1/C1 + 1/C2 + ... + 1/Cn
+</code></pre>
+<p>La carga es igual en todos y la tensión total es la suma de las tensiones parciales.</p>
+<p><strong>Condensadores en paralelo:</strong></p>
+<pre><code class="language-text">Ceq = C1 + C2 + ... + Cn
+</code></pre>
+<p>La tensión es igual en todos y la carga total es la suma de las cargas parciales.</p>
+<h2>5. Carga y descarga del condensador; fórmulas de resistencias, condensadores y bobinas</h2>
+<h3>Carga de un condensador a través de una resistencia</h3>
+<p>En un circuito <code>R-C</code> conectado a una fuente continua <code>Vg</code>, el condensador comienza descargado. Al cerrar el circuito, la corriente es máxima y la tensión del condensador es cero. A medida que se carga, la corriente disminuye y la tensión aumenta hasta aproximarse a <code>Vg</code>.</p>
+<pre><code class="language-text">τ = R · C
+Vc(t) = Vg · [1 − e^(−t/τ)]
+I(t) = (Vg/R) · e^(−t/τ)
+Q(t) = C · Vg · [1 − e^(−t/τ)]
+</code></pre>
+<p>Si el condensador parte de una tensión inicial <code>V0</code>:</p>
+<pre><code class="language-text">Vc(t) = Vg + (V0 − Vg) · e^(−t/RC)
+</code></pre>
+<p>La <strong>constante de tiempo</strong> es:</p>
+<pre><code class="language-text">τ = R · C
+</code></pre>
+<p>En <code>t = τ</code>, el condensador alcanza aproximadamente el <strong>63,2 %</strong> de la tensión final y la corriente ha descendido al <strong>36,8 %</strong> de su valor inicial. En la práctica se considera cargado después de:</p>
+<pre><code class="language-text">tcarga ≈ 5 · τ = 5 · R · C
+</code></pre>
+<h3>Descarga del condensador</h3>
+<p>Al desconectar la fuente y cerrar el circuito de descarga mediante una resistencia <code>Rd</code>, el condensador entrega la energía almacenada. La tensión y la corriente disminuyen exponencialmente.</p>
+<pre><code class="language-text">τd = Rd · C
+Vc(t) = V0 · e^(−t/τd)
+I(t) = −(V0/Rd) · e^(−t/τd)
+Q(t) = Q0 · e^(−t/τd)
+</code></pre>
+<p>En la práctica se considera descargado después de:</p>
+<pre><code class="language-text">tdescarga ≈ 5 · τd = 5 · Rd · C
+</code></pre>
+<h3>Bobinas e inductores</h3>
+<p>Una bobina o solenoide es un hilo conductor enrollado en espiras. Cuando circula corriente crea un campo magnético y almacena energía en él. La <strong>inductancia</strong> (<code>L</code>) mide la oposición a las variaciones de corriente.</p>
+<ul>
+<li>Unidad: <strong>henrio (H)</strong>.</li>
+<li>Submúltiplos: mH y µH.</li>
+<li>La bobina se opone a los cambios bruscos de corriente.</li>
+<li>Al abrir o cerrar un circuito puede producir una fuerza electromotriz de autoinducción.</li>
+</ul>
+<p><strong>Campo magnético de un solenoide ideal:</strong></p>
+<pre><code class="language-text">B = μ · N · I / l = μ · n · I
+</code></pre>
+<p><code>μ</code> es la permeabilidad del medio, <code>N</code> el número de espiras, <code>l</code> la longitud y <code>n = N/l</code> el número de espiras por metro.</p>
+<p><strong>Intensidad de campo magnético:</strong></p>
+<pre><code class="language-text">H = N · I / l = n · I
+B = μ · H
+</code></pre>
+<p><strong>Flujo magnético:</strong></p>
+<pre><code class="language-text">Φ = B · S
+</code></pre>
+<p><strong>Inductancia:</strong></p>
+<pre><code class="language-text">L = N · Φ / I
+</code></pre>
+<p>La unidad también puede expresarse como <code>1 H = 1 Wb/A</code>.</p>
+<p><strong>Fuerza electromotriz de autoinducción:</strong></p>
+<pre><code class="language-text">e = −L · di/dt
+</code></pre>
+<p>El signo negativo expresa la ley de Lenz: la f.e.m. se opone a la variación de corriente que la produce.</p>
+<p><strong>Energía almacenada en una bobina:</strong></p>
+<pre><code class="language-text">EL = 1/2 · L · I²
+</code></pre>
+<p><strong>Bobinas en serie</strong>, sin acoplamiento magnético:</p>
+<pre><code class="language-text">Leq = L1 + L2 + ... + Ln
+</code></pre>
+<p><strong>Bobinas en paralelo</strong>, sin acoplamiento magnético:</p>
+<pre><code class="language-text">1 / Leq = 1/L1 + 1/L2 + ... + 1/Ln
+</code></pre>
+<h3>Fórmulas esenciales para estudiar</h3>
+<pre><code class="language-text">Q = I · t
+V = W / Q
+V = I · R
+I = V / R
+R = V / I
+P = V · I = I² · R = V² / R
+E = P · t = V · I · t
+R = ρ · L / S
+C = Q / V
+Q = C · V
+C = ε · S / d
+Ec = 1/2 · C · V²
+τRC = R · C
+Vc,carga = Vg · (1 − e^(−t/RC))
+Vc,descarga = V0 · e^(−t/RC)
+B = μ · N · I / l
+H = N · I / l
+Φ = B · S
+L = N · Φ / I
+e = −L · di/dt
+EL = 1/2 · L · I²
+</code></pre>
+<blockquote>
+<p><strong>Nota de seguridad:</strong> los condensadores pueden conservar carga después de desconectar el circuito. Antes de manipularlos hay que comprobar su tensión y descargarlos mediante un procedimiento seguro y una resistencia adecuada.</p>
+</blockquote></article></main><footer class="foot"><div class="wrap">Resúmenes de instituto · Material de estudio</div></footer></body></html>
